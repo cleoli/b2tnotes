@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+    NYC Tech Talent Pipeline's Bridge-To-Tech program notes
+
+    The Knowledge House Instructors: Tremaine Davis, Cris Mercado
+
+    Program Dates: October 16 - December 16, 2017
+
+    Contents: HTML, CSS, JavaScript, Git&Github, Professional Development
+
+-->
+
+<!--
+    Page layout: Like sticky notes, but a bit colorful and relaxing.
+    Content Display: By class, each page displays the contents taught in each class.
+    Menu:Technical Class | Professional Development Class | 
+         DOM(onclick):Technical Class | Day 1 October 16 | Day 2 October 18| etc.
+    Body: Notes | Practice | Assignments | Quiz | Project
+    Footer: Comments.
+-->
+<!--
+    CSS | noteNov17.css
+    JavaScript | noteNov17.js
+    section0 #menu | ul | li -> #mi |
+    section1 #indexDes | h3, p | 
+    section2 #notes | h3, table, p |
+    section3 #practice
+    section4 #assignemnts
+    section5 #quiz
+    section6 #project
+    section7 #comments 
+-->
+
+    <head>
+        <title>Cleo's Notes</title>
+        <link rel="stylesheet" type="text/css" href="noteNov17.css">
+        <script href="noteNov17.js"></script>
+    </head>
+
+    <body>
+        <section id="menu">
+            <ul>
+                <!--
+                onclick function for these two. So that it will show the addtional menu items for each category.
+                -->
+                <li id='mT'>Technical Class Notes</li> 
+                <li id='mP'>Prefessional Development Class Notes</li>
+            </ul>
+        </section>
+        <section id="indexDes">
+            <h3>Program Description</h3>
+            <p>
+                NYC Tech Talent Pipeline's Bridge-To-Tech Program
+                <br>The Knowledge House Instructors: Tremaine Davis, Cris Mercado
+                <br>Program Dates: October 16, 2017 - December 14, 2017
+                <br>Contents Covered: HTML, CSS, JavaScript, Git&Github, Professional Development
+            </p>
+        </section>
+
+        <section id="notes">
+            <h3>Day 1 October 16: Basic computer navigations and Introduction to HTML</h3>
+
+            <h4> Basic Computer Navigations </h4>
+            <table>
+                <tr>
+                    <th rowspan="2" id='xT'>Mac Function Keys</th>
+                    <td>F3</td>
+                    <td>Mission Control, bird's eye view of all open windows</td>                    
+                </tr>
+                <tr>
+                    <td>F4</td>
+                    <td>Opens the launchpad that contains your computer applications</td>                    
+                </tr>
+                <tr id='empR'></tr>
+                <tr>
+                    <th rowspan="2" id='xT'>Mac Trackpad Gestures</th>
+                    <td>To Scroll</td>
+                    <td>Move with two fingers</td>                  
+                </tr>
+                <tr>
+                    <td id='longTd'>To Right Click</td>
+                    <td>Click or tap with two fingers</td>
+                </tr>
+
+                <tr id='empR'></tr>
+                <tr>
+                    <th rowspan='6' id='xT'> Google Search Tricks</th>
+                    <td>site:</td>
+                    <td>to search for content from the site specified</td>
+                </tr>
+                <tr> 
+                    <td>intitle:</td>
+                    <td>search for titles that contains the words you specified</td>
+                </tr>
+                <tr>
+                    <td>filetype:</td>
+                    <td>search for files with the specified file extention</td>
+                </tr>
+                <tr>
+                    <td> - </td>
+                    <td>followed by a word you want to eliminate</td>
+                </tr>
+                <tr>
+                    <td>~</td>
+                    <td>followed by a word you want in the content of results</td>
+                </tr>
+                <tr>
+                    <td>" "</td>
+                    <td>will search for words appear in the order you typed</td>
+                </tr>
+
+                <tr id='empR'></tr>
+                <tr>
+                    <th rowspan='5' id='xT'>Educational Links</th>
+                    <td colspan='2'>Sololearn</td>
+                </tr>
+                <tr>
+                    <td colspan='2'>w3schools</td>
+                </tr>
+                <tr>
+                    <td colspan='2'>Codecademy</td>
+                </tr>
+                <tr>
+                    <td colspan='2'>Coursera</td>
+                </tr>
+                <tr>
+                    <td colspan='2'>Stack Overflow</td>
+                </tr>
+            </table>
+
+            <h4>Introduction to HTML</h4>
+            <p>Sublime is a software that we can use to write our codes. You can right click on your coding area to select the option to open your file in browser.</p>
+            <p>An HTML element usually consists of an opening tag and a closing tag, e.g. &lthtml&gt &lt/html&gt. The backbone elements of an HTML file are the following:</p>
+            <div id='samCode'>
+                <p>&lt!DOCTYPE html&gt
+                    <br>&lthtml&gt
+                </p>
+                <p id='cTab'>
+                    &lthead&gt
+                    <br>&lt/head&gt
+                    <br>
+                    <br>&ltbody&gt
+                    <br>&lt/body&gt              
+                </p>
+                <p>&lt/html&gt</p>
+            </div>
+           <p>The body element of an HTML document holds all the content of web page for display. The head element of an HTML document holds the meta data, e.g. CSS files, etc.</p>
+           <p>A few other HTML elements:</p>
+           <table>
+               <tr>
+                    <th id='yT'>&lttitle&gt &lt/title&gt</th> 
+                    <td>will go inside the head element, will be displayed on the tab of a brower page </td>
+               </tr>
+               <tr> 
+                    <th id='yT'>&lth1&gt &lt/h1&gt</th> 
+                    <td>is an heading element and will go inside the body element</td>
+               </tr>
+               <tr>
+                    <th id='yT'>&lth6&gt &lt/h6&gt</th> 
+                    <td>is the smallest heading element</td>
+               </tr>
+               <tr>
+                    <th id='yT'>&ltimg&gt</th> 
+                    <td>is a self contained element and will be used for displaying an image</td>
+               </tr>
+               <tr>
+                    <th id='yT'>&ltp&gt &lt/p&gt</th> 
+                    <td>is a paragraph element and will go inside the body element</td>
+               </tr>
+           </table>
+           <p>Tag Format:</p>
+           <p id='cTab'>Tag name, attribute
+                <br>Common HTML attributes: alt, disabled, href, id, src, style, title
+           </p>
+           <p>Quiz</p>
+           <p id='cTab'> Every Monday, on contents covered in the previous week.
+                <br>Multiple choices, 10 problems.
+           </p>
+        </section>
+        <section id="practice"></section>
+        <section id="assignemnts"></section>
+        <section id="quiz"></section>
+        <section id="project"></section>
+        <section id="comments"></section>
+    </body>
+
+</html>
